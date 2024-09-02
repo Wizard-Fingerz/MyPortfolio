@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default nextConfig;
+const nextConfig = {
+    //...
+    images: {
+      unoptimized: true,
+    },
+    asset: './public/assets/',
+  };
+  
+  export default nextConfig;

@@ -4,14 +4,15 @@ import CssBaseline from '@mui/material/CssBaseline';
 import theme from '../theme';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import Home from '.';
 
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Navbar />
+      {/* <Home /> */}
       <Component {...pageProps} />
-      <Footer />
+      
     </ThemeProvider>
   );
 }

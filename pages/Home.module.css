@@ -1,0 +1,201 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  
+  .main {
+    padding: 20px;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .heroContent {
+    max-width: 500px;
+  }
+  
+  .heroContent h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .heroContent p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .heroImage {
+    max-width: 500px;
+  }
+  
+  .projects {
+    margin-bottom: 40px;
+  }
+  
+  .projectCategories {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .projectCategory {
+    background-color: #eee;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .project {
+    width: calc(50% - 10px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    font-size: 16px;
+  }
+  
+  .skills {
+    margin-bottom: 40px;
+  }
+  
+  .skillBar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .skillBar h3 {
+    margin-right: 20px;
+  }
+  
+  .progressBar {
+    background-color: #eee;
+    height: 8px;
+    border-radius: 5px;
+  }
+  
+  .aboutMe {
+    margin-bottom: 40px;
+  }
+  
+  .aboutMeContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .aboutMeContent p {
+    font-size: 18px;
+    max-width: 500px;
+  }
+  
+  .getInTouch {
+    margin-bottom: 40px;
+  }
+  
+  .getInTouch p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .sendMessageButton {
+    background-color: #673ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .footerContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .footerLinks {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .linkGroup {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .linkGroup h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .linkGroup ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .linkGroup li {
+    margin-bottom: 5px;
+  }
+  
+  .linkGroup a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .copyright {
+    margin-bottom: 20px;
+  }
+  
+  .socialLinks {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .socialLinks i {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .madeWithVisily {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .madeWithVisily p {
+    margin-right: 10px;
+  }
