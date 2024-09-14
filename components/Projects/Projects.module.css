@@ -1,3 +1,4 @@
+
 .tabs {
     margin: 0 auto;
     display: flex;
@@ -13,12 +14,24 @@
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-    margin: 0 10px;
+    margin: 10px;
   }
   
   .activeTab {
     background-color: #333;
     color: #fff;
+  }
+
+  .h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+
+  .projectContent {
+    /* Add margin to the sides of the component */
+    margin: 40px; /* Add auto to center the component horizontally */
   }
   
   /* .projectContent {
@@ -37,14 +50,82 @@
   
   .projectGrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
 
 .projectCard {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%; /* make project card width responsive */
+  max-width: 370px; /* set a maximum width */
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.projectCard img {
+  width: 100%; /* make image width responsive */
+  height: auto; /* adjust height automatically */
+  object-fit: cover; /* scale image to fit container */
+  max-width: 370px; /* set a maximum width */
+  max-height: 200px; /* set a maximum height */
+
+}
+
+
+/* Add media queries for responsiveness */
+
+/* For large screens (desktops) */
+@media only screen and (min-width: 1200px) {
+  .projectGrid {
+    grid-template-columns: repeat(3, 1fr); /* Show 3 columns on large screens */
+  }
+}
+
+/* For medium screens (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .projectGrid {
+    grid-template-columns: repeat(2, 1fr); /* Show 2 columns on medium screens */
+  }
+}
+
+/* For small screens (mobiles) */
+@media only screen and (max-width: 767px) {
+  .projectGrid {
+    grid-template-columns: 1fr; /* Show 1 column on small screens */
+  }
+
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .projectCard {
+    padding: 10px; /* reduced padding on mobile */
+    margin: 0px; /* reduced padding on mobile */
+  }
+
+  .projectCard img {
+    max-width: 250px; /* adjust maximum width for mobile */
+    max-height: 150px; /* adjust maximum height for mobile */
+  }
+}
+
+/* Add styles for the "Load More" button */
+.loadMore {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+}
+
+.loadMore:hover {
+  background-color: #444;
 }

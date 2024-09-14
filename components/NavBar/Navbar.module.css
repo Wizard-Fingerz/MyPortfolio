@@ -1,51 +1,106 @@
 .header {
-    display: flex;
-    /* align-items: center; */
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav a:hover {
+  color: #666;
+}
+
+/* Mobile Menu */
+.navMobile {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%; /* Reduced the width to 80% */
+  height: 60vh; /* Reduced the height to 80% of the viewport */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow for better visibility */
+  border-radius: 10px 0 0 10px; /* Optional: Add rounded corners */
+  padding-top: 50px; /* Add padding to push content down */
+}
+
+.navMobile.open {
+  right: 0;
+}
+
+.navMobile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navMobile li {
+  margin-bottom: 20px;
+}
+
+.navMobile a {
+  font-size: 1.2rem; /* Adjust font size to fit the smaller sidebar */
+  color: #333;
+  text-decoration: none;
+}
+
+.navMobile a:hover {
+  color: #666;
+}
+
+/* Close Button Styling */
+.closeButton {
+  position: absolute;
+  top: 10px; /* Adjusted closer to the top */
+  left: 10px; /* Moved closer to the left side */
+  color: #333;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10; /* Ensures it stays above all elements */
+}
+
+.closeButton:hover {
+  color: #666;
+}
+
+/* Media Queries */
+@media (min-width: 769px) {
+  .navMobile {
+    display: none;
   }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav {
-    margin-left: auto;
-  }
-  
-  .nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  .nav li {
-    margin-left: 20px;
-  }
-  
-  .nav a {
-    text-decoration: none;
-    color: #333; /* changed from default blue color */
-  }
-  
-  .nav button {
-    color: #333; /* changed from default blue color */
-    background-color: transparent; /* remove default blue background */
-    border: none; /* remove default blue border */
-    padding: 10px 20px; /* add some padding to the buttons */
-    border-radius: 5px; /* add some rounded corners to the buttons */
-    cursor: pointer; /* change cursor to pointer on hover */
-  }
-  
-  .nav button:hover {
-    background-color: #f0f0f0; /* add some hover effect */
-    color: #666; /* change text color on hover */
-  }
-  
-  .MuiAppBar-root {
-    background-color: transparent !important; /* remove default blue background */
-    box-shadow: none !important; /* remove default box shadow */
-  }
+}

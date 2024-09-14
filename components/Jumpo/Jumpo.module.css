@@ -1,60 +1,93 @@
 .jump {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('/assets/background.jpg');
-    background-size: cover;
-    background-position: center;
-  }
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
 
-  .jump::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* adjust the opacity value to your liking */
-    z-index: 0;
-  }  
-  
-  .heroContent {
-    text-align: center;
-    color: white;
-    z-index: 1;
-    position: relative;
-  }
+.jump::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* adjust the opacity value to your liking */
+  z-index: 0;
+}
 
+.heroContent {
+  text-align: center;
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+
+.heroContent h2 {
+  font-size: 8vh;
+  font-weight: bold;
+}
+
+.heroContent p {
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+.heroImage {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.downloadButton {
+  background-color: #673ab7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+
+/* For large screens (desktops) */
+@media only screen and (min-width: 1200px) {
   .heroContent h2 {
-    font-size: 8vh;
-    font-weight: bold;
+    font-size: 10vh;
   }
-
   .heroContent p {
-    font-size: 3vh;
-    font-weight: bold;
+    font-size: 4vh;
   }
-  
-  .heroImage {
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-  }
+}
 
-  
-  .downloadButton {
-    background-color: #673ab7;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* For medium screens (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .heroContent h2 {
+    font-size: 7vh;
   }
-  
+  .heroContent p {
+    font-size: 2.5vh;
+  }
+}
+
+/* For small screens (mobiles) */
+@media only screen and (max-width: 767px) {
+  .heroContent h2 {
+    font-size: 5vh;
+  }
+  .heroContent p {
+    font-size: 2vh;
+  }
+  .downloadButton {
+    padding: 5px 10px;
+  }
+}

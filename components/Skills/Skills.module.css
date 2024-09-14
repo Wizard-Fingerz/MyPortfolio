@@ -1,0 +1,45 @@
+.skills {
+    /* Add this to position the skill bars to the right */
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+  
+  .skillContainer {
+    /* Set the width to 50% */
+    width: 50%;
+    /* Add some padding to create space between the skill bars and the edge of the page */
+    padding: 20px;
+  }
+
+  
+  .h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  
+  .skillBar {
+    /* Add some margin to create space between the skill bars */
+    margin-bottom: 20px;
+  }
+  
+  .progressBar {
+    /* Set the height of the progress bars */
+    height: 20px;
+    /* Add some border radius to make the progress bars look nicer */
+    border-radius: 10px;
+    /* Add some background color to the progress bars */
+    background-color: #ccc;
+  }
+
+
+  
+/* For small screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

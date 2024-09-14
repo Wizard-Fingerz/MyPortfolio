@@ -1,0 +1,54 @@
+.aboutMe {
+    margin-bottom: 40px;
+    /* Use flexbox to align the image and the text vertically */
+    display: flex;
+    /* Add this property to align the contents to the right side of the page */
+    justify-content: flex-end;
+    padding: 40px;
+}
+
+
+.h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+.aboutMeContent {
+    /* Use flexbox to align the image and the text vertically */
+    display: flex;
+    align-items: center;
+    /* Add this property to align the contents to the right side of the page */
+    justify-content: flex-end;
+}
+
+.imageContainer {
+    /* Set the width of the image container to fit the image */
+    width: 200px;
+    /* Reduce the margin to 10px */
+    margin-right: 10px;
+}
+
+.textContent {
+    /* Set the width of the text container to take up the remaining space */
+    flex: 1;
+}
+
+.textContent {
+    /* Set the width of the text container to take up the remaining space */
+    flex: 1;
+}
+
+.aboutMeContent p {
+    font-size: 18px;
+    max-width: 500px;
+}
+
+
+/* For small screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .aboutMeContent {
+      flex-direction: column;
+      align-items: center;
+    }
+
+}
