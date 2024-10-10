@@ -10,6 +10,7 @@
 
 .newsletter {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .footerContent {
@@ -125,6 +126,6 @@
     }
 
     .newsletter {
-        width: 50%;
+        width: 100%;
     }
 }

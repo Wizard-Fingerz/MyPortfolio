@@ -5,6 +5,7 @@ import { Email } from '@mui/icons-material'; // Import the Email icon from MUI
 
 
 function Footer() {
+    const currentYear = new Date().getFullYear();
     return (
 
         <footer className={styles.footer}>
@@ -66,7 +67,7 @@ function Footer() {
             </div>
 
             <div className={styles.copyright}>
-                <p>©2022 Brand, Inc. • Privacy • Terms • Sitemap</p>
+                <p>&copy;{currentYear} WizCode. • Privacy • Terms • Sitemap</p>
             </div>
             <div className={styles.socialLinks}>
                 <a href="#" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a>
