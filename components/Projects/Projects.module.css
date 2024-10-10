@@ -129,3 +129,17 @@
 .loadMore:hover {
   background-color: #444;
 }
+
+
+.viewProject {
+  background-color: #4CAF50; /* Green */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.viewProject:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link'; // Add this import
 import styles from './Projects.module.css';
 
 const Project = () => {
@@ -9,87 +10,53 @@ const Project = () => {
         {
             title: 'Blockchain App',
             projects: [
+                
                 {
-                    headers: 'Block App',
-                    description: 'A decentralized application for secure transactions.',
-                    image: '/assets/blockchain.jpg',
+                    headers: 'Nkowe',
+                    description: 'A platform that empowers education through technology - helps learners and educators connect, collaborate, and achieve their learning goals..',
+                    image: '/assets/classroom.jpg',
+                    url: 'https://nkowe.vercel.app/index'
                 },
-                {
-                    headers: 'Block App',
-                    description: 'A blockchain-based supply chain management system.',
-                    image: '/assets/blockchain.jpg',
-                },
-                {
-                    headers: 'Block App',
-                    description: 'A decentralized application for secure transactions.',
-                    image: '/assets/blockchain.jpg',
-                },
-                {
-                    headers: 'Block App',
-                    description: 'A blockchain-based supply chain management system.',
-                    image: '/assets/blockchain.jpg',
-                },
-                {
-                    headers: 'Block App',
-                    description: 'A decentralized application for secure transactions.',
-                    image: '/assets/blockchain.jpg',
-                },
-                {
-                    headers: 'Block App',
-                    description: 'A blockchain-based supply chain management system.',
-                    image: '/assets/blockchain.jpg',
-                },
-                // add more projects here
             ],
         },
         {
             title: 'Data Analysis',
             projects: [
                 {
-                    headers: 'Block App',
+                    headers: 'IGradePro',
                     description: 'Analyzing customer behavior using Python and ML.',
                     image: '/assets/datascience.jpg',
+                    url: ''
                 },
-                {
-                    headers: 'Block App',
-                    description: 'Predicting sales trends using data visualization.',
-                    image: '/assets/datascience.jpg',
-                },
-                {
-                    headers: 'Block App',
-                    description: 'Analyzing customer behavior using Python and ML.',
-                    image: '/assets/datascience.jpg',
-                },
-                {
-                    headers: 'Block App',
-                    description: 'Predicting sales trends using data visualization.',
-                    image: '/assets/datascience.jpg',
-                },
-                // add more projects here
             ],
         },
         {
             title: 'Software Development',
             projects: [
+                
                 {
-                    headers: 'Block App',
-                    description: 'Analyzing customer behavior using Python and ML.',
-                    image: '/assets/datascience.jpg',
+                    headers: 'Nkowe',
+                    description: 'A platform that empowers education through technology - helps learners and educators connect, collaborate, and achieve their learning goals..',
+                    image: '/assets/classroom.jpg',
+                    url: 'https://nkowe.vercel.app/index'
                 },
                 {
-                    headers: 'Block App',
+                    headers: 'IGradePro',
                     description: 'Predicting sales trends using data visualization.',
                     image: '/assets/datascience.jpg',
+                    url: ''
                 },
                 {
-                    headers: 'Block App',
+                    headers: 'SMPP',
                     description: 'Analyzing customer behavior using Python and ML.',
                     image: '/assets/datascience.jpg',
+                    url: ''
                 },
                 {
-                    headers: 'Block App',
+                    headers: 'Elektroniks',
                     description: 'Predicting sales trends using data visualization.',
                     image: '/assets/datascience.jpg',
+                    url: ''
                 },
                 // add more projects here
             ],
@@ -98,25 +65,18 @@ const Project = () => {
             title: 'Machine Learning',
             projects: [
                 {
-                    headers: 'Block App',
+                    headers: 'IGradePro',
                     description: 'Analyzing customer behavior using Python and ML.',
                     image: '/assets/datascience.jpg',
+                    url: ''
                 },
                 {
-                    headers: 'Block App',
-                    description: 'Predicting sales trends using data visualization.',
-                    image: '/assets/datascience.jpg',
+                    headers: 'Nkowe',
+                    description: 'A platform that empowers education through technology - helps learners and educators connect, collaborate, and achieve their learning goals..',
+                    image: '/assets/classroom.jpg',
+                    url: 'https://nkowe.vercel.app/index'
                 },
-                {
-                    headers: 'Block App',
-                    description: 'Analyzing customer behavior using Python and ML.',
-                    image: '/assets/datascience.jpg',
-                },
-                {
-                    headers: 'Block App',
-                    description: 'Predicting sales trends using data visualization.',
-                    image: '/assets/datascience.jpg',
-                },
+             
                 // add more projects here
             ],
         },
@@ -125,24 +85,28 @@ const Project = () => {
             title: 'UI/UX Design',
             projects: [
                 {
+                    headers: 'Nkowe',
+                    description: 'A platform that empowers education through technology - helps learners and educators connect, collaborate, and achieve their learning goals..',
+                    image: '/assets/classroom.jpg',
+                    url: ''
+                },
+                {
+                    headers: 'Khefue',
+                    description: 'Predicting sales trends using data visualization.',
+                    image: '/assets/datascience.jpg',
+                    url: ''
+                },
+                {
                     headers: 'Block App',
                     description: 'Analyzing customer behavior using Python and ML.',
                     image: '/assets/datascience.jpg',
+                    url: ''
                 },
                 {
                     headers: 'Block App',
                     description: 'Predicting sales trends using data visualization.',
                     image: '/assets/datascience.jpg',
-                },
-                {
-                    headers: 'Block App',
-                    description: 'Analyzing customer behavior using Python and ML.',
-                    image: '/assets/datascience.jpg',
-                },
-                {
-                    headers: 'Block App',
-                    description: 'Predicting sales trends using data visualization.',
-                    image: '/assets/datascience.jpg',
+                    url: ''
                 },
                 // add more projects here
             ],
@@ -151,24 +115,22 @@ const Project = () => {
             title: 'Flutter Apps',
             projects: [
                 {
-                    headers: 'Block App',
+                    headers: 'Wiz Poll',
                     description: 'Analyzing customer behavior using Python and ML.',
                     image: '/assets/datascience.jpg',
+                    url: ''
                 },
                 {
-                    headers: 'Block App',
+                    headers: 'Wiz Band',
                     description: 'Predicting sales trends using data visualization.',
                     image: '/assets/datascience.jpg',
+                    url: ''
                 },
                 {
-                    headers: 'Block App',
+                    headers: 'GreenPurse',
                     description: 'Analyzing customer behavior using Python and ML.',
                     image: '/assets/datascience.jpg',
-                },
-                {
-                    headers: 'Block App',
-                    description: 'Predicting sales trends using data visualization.',
-                    image: '/assets/datascience.jpg',
+                    url: ''
                 },
                 // add more projects here
             ],
@@ -212,6 +174,11 @@ const Project = () => {
                                         <Image src={project.image} alt={project.description} width={370} height={200} />
                                         <h3>{project.headers}</h3>
                                         <p>{project.description}</p>
+                                        <Link href={project.url}> 
+                                        
+                                                <button className={styles.viewProject}>Click to view project</button>
+                                            
+                                        </Link>
                                     </div>
                                 ))}
                             </div>
