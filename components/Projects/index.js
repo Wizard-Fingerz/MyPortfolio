@@ -44,19 +44,19 @@ const Project = () => {
                     headers: 'IGradePro',
                     description: 'Predicting sales trends using data visualization.',
                     image: '/assets/datascience.jpg',
-                    url: ''
+                    url: 'https://smpp-frontend.vercel.app/register'
                 },
                 {
                     headers: 'SMPP',
                     description: 'Analyzing customer behavior using Python and ML.',
                     image: '/assets/datascience.jpg',
-                    url: ''
+                    url: 'https://smpp-frontend.vercel.app/register'
                 },
                 {
                     headers: 'Elektroniks',
                     description: 'Predicting sales trends using data visualization.',
                     image: '/assets/datascience.jpg',
-                    url: ''
+                    url: 'https://elektroniks.vercel.app/'
                 },
                 // add more projects here
             ],
