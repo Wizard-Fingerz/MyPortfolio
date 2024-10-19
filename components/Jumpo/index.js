@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './Jumpo.module.css';
-import Resume from '../../public/assets/Adewale Oladiti John Resume 2024.pdf'
 
 const JumpoBody = () => {
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = Resume;
+        link.href = '/assets/Adewale Oladiti John Resume 2024.pdf'; // Use the relative path
         link.download = 'Adewale Oladiti John Resume 2024.pdf';
         link.click();
     };
+
 
 
     return <section className={styles.jump}>
