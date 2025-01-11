@@ -12,7 +12,7 @@ const JumpoBody = () => {
     const handleDownload2 = () => {
         const link = document.createElement('a');
         link.href = '/assets/Oladiti Adewale John CV.pdf'; // Use the relative path
-        link.download = 'Adewale Oladiti John Resume 2025.pdf';
+        link.download = 'Adewale Oladiti John Resume 2025 (Python Dev).pdf';
         link.click();
     };
     
