@@ -61,10 +61,10 @@ const Navbar = () => {
               <ul>
                 {[
                   { label: 'Projects', href: '/' },
-                  { label: 'Skills', href: '/about' },
-                  { label: 'About Me', href: '/projects' },
-                  { label: 'Experience', href: '/experience' },
-                  { label: 'Contact', href: '/contact' },
+                  { label: 'Skills', href: '#' },
+                  { label: 'About Me', href: '#' },
+                  { label: 'Experience', href: '#' },
+                  { label: 'Contact', href: '#' },
                 ].map((item, index) => (
                   <li key={index}>
                     <Link href={item.href} passHref>
