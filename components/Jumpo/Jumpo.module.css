@@ -55,6 +55,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin: 10px;
 }
 
 /* Media queries for responsiveness */
